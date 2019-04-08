@@ -84,7 +84,6 @@ class TrainingList extends Component {
         accessor: 'date',
         width: 200,
         Cell: ({ value }) => moment(value).format('LL')
-
       },
       {
         Header: 'Duration',
@@ -96,7 +95,6 @@ class TrainingList extends Component {
         accessor: 'activity',
         width: 200,
       },
-
       {
         Header: 'Customer',
         accessor: 'customer',
@@ -124,7 +122,6 @@ class TrainingList extends Component {
         minwidth: 200,
         Cell: ({ value, row }) => <EditTraining modifyTraining={this.modifyTraining} linkId={value} training={row} />
       },
-
       {
         Header: '',
         accessor: 'id',
@@ -139,7 +136,6 @@ class TrainingList extends Component {
             onClick={() => this.deleteTraining(value)}>Delete<DeleteIcon className={classes.rightIcon} />
           </Button>
       }
-
     ];
     return (
       <div>
